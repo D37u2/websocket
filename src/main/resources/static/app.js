@@ -37,6 +37,9 @@ function sendName() {
     stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
 }
 
+//设置header
+
+
 function showGreeting(message) {
     $("#greetings").append("<tr><td>" + message + "</td></tr>");
 }
